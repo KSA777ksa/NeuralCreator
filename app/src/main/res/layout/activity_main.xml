@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background_gradient"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/btnGenerateText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_gradient_1"
+        android:text="Генерация текста по изображению"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:drawablePadding="8dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnGenerateImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_gradient_2"
+        android:text="Генерация изображения по тексту"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:drawablePadding="8dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnClassification"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_gradient_3"
+        android:text="Классификация изображения (offline)"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:drawablePadding="8dp"
+        android:textAlignment="center"/>
+</LinearLayout>

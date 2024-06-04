@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Neural Creator</string>
+    <string name="generate_text">Генерация текста по изображению</string>
+    <string name="generate_image">Генерация изображения по тексту</string>
+    <string name="classification">Классификация</string>
+    <string name="upload_image">Выгрузить изображение</string>
+    <string name="generated_text">Generated text will appear here</string>
+</resources>
