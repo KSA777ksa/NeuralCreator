@@ -1,0 +1,10 @@
+version: "2"
+authtoken: YOUR_TOKEN
+
+tunnels:
+  first_tunnel:
+    addr: 5036
+    proto: http
+  second_tunnel:
+    addr: 5032
+    proto: http
