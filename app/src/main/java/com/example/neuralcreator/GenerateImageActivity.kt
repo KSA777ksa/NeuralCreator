@@ -112,11 +112,11 @@ class GenerateImageActivity : AppCompatActivity() {
         val client = OkHttpClient.Builder()
             .readTimeout(120, TimeUnit.SECONDS)
             .connectTimeout(120, TimeUnit.SECONDS)
-            .hostnameVerifier { _, _ -> true }  // Разрешить все сертификаты для разработки
+            .hostnameVerifier { _, _ -> true }  
             .build()
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://efaa-46-191-176-55.ngrok-free.app/")  // Замените на актуальный URL ngrok
+            .baseUrl("https://efaa-46-191-176-55.ngrok-free.app/")  
             .addConverterFactory(GsonConverterFactory.create())
             .client(client)
             .build()
@@ -209,10 +209,10 @@ class GenerateImageActivity : AppCompatActivity() {
     private fun startCrop(uri: Uri) {
         val destinationUri = Uri.fromFile(File(cacheDir, "croppedImage.png"))
         val options = UCrop.Options().apply {
-            setFreeStyleCropEnabled(true) // Позволяет пользователю свободно выбирать область для обрезки
+            setFreeStyleCropEnabled(true) 
         }
         UCrop.of(uri, destinationUri)
-            .withAspectRatio(0f, 0f) // Устанавливаем свободный аспект
+            .withAspectRatio(0f, 0f) 
             .withMaxResultSize(512, 512)
             .withOptions(options)
             .start(this, UCROP_REQUEST_CODE)
