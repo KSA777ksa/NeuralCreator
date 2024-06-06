@@ -16,7 +16,6 @@ class SplashActivity : AppCompatActivity() {
         val progressBar: ProgressBar = findViewById(R.id.progressBar)
         progressBar.max = 100
 
-        // Симуляция загрузки данных
         val handler = Handler(Looper.getMainLooper())
         handler.postDelayed({
             val intent = Intent(this, MainActivity::class.java)
@@ -24,7 +23,6 @@ class SplashActivity : AppCompatActivity() {
             finish()
         }, 3000)
 
-        // Заполнение прогресс бара
         Thread {
             for (i in 0..100) {
                 Thread.sleep(30)
